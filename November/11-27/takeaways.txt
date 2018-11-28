@@ -1,0 +1,19 @@
+Objectives
+css > Typography 
+Line Height- distance between lines of text on a page
+font-size- actual size of lettering. Should be atleast 16px
+line length- should be ~50-75 characters/line
+Lettter spacing (kerning) - spacing between individual letters
+Sans-Serif vs Serif - no tails 
+monospace fonts - equal space between the center of every character. Best suited for titles and headers
+
+custom fonts > Google Fonts 
+link fonts from google repo at fonts.google.com and add specefic families as needed. Be sure to acutally use the font after importing it
+
+
+css psuedo classes/elements
+css Keywords that can be added to selectors tnat represent different states 
+
+
+into to (twitter) Bootstrap > 3rd Party Stylesheet 
+bootstrap is a super popular way to quickly deal with the layouts of a website
