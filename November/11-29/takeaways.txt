@@ -1,0 +1,31 @@
+Objectives 
+>Grid Based web design in web dev
+Use a detailed sketch to get started.
+ Pay particular attention to the location of navigation bars, titles, headers, content, images, footers etc.
+When imagining allignments in particular, be mindful of the grid
+Grids serve to allign elements aesthetically along theoretical columns and rows. FB is a perfect example. 
+Non-designers handbook 
+https://ptgmedia.pearsoncmg.com/images/9780133966152/samplepages/9780133966152.pdf
+
+Wireframing tools:
+Balsamiq***: https://Balsamiq.com/
+Frambox: http://framebox.org
+pen & paper: notebook
+
+Rows and columns are applied to the html via classes and typically are applied to particular containers 
+
+>Bootstrap grid system for layout
+Let's you organize content baesd on the "number of columns" a div spans- out of a total 12 columns
+Every bootstrap grid is made up of...
+    containers which wrap around the entire grid  
+    rows which are defined first and are just rows
+    columns which are defined within rows and specify the columns. The sum total of all columns within a row must add up to 12
+
+Each of these elements is implemented by creating a block element 
+
+>Mobile responsive web design using media queries and break points
+Seems to be pretty straight forward so far
+
+html- structure
+css - style 
+js - behavior 
