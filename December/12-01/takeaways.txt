@@ -1,0 +1,9 @@
+Objectives
+>Embrace the "wait, wha???" It's going to happen
+>JavaScript basics/fundamentals 
+JS allows us to create dynamic web apps capable of taking user inputs, changing what's displayed, animating elements, and much more!
+Manipulate HTML and CSS
+
+>alerts, prompts, confirms, oh my!
+
+>variables, logging, arrays, if/else
