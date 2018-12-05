@@ -1,0 +1,29 @@
+Objectives
+>quick review (if, arrays, vars)
+console.log() is used to trouble shoot your js. The user doesn't see this on the front end.
+document.write() can be used to write to the DOM, but genereally is not used because it overwrites the entire html file
+If/else statements are critical! 
+Statements are composed of an if, else- if, or else (keyword), a condtion, and the resulting code in {} curly breackets. 
+Array is a list of items (variables or objects) that are grouped together in an indexed list. The elements of the array are likely related somehow.
+Mostly unique to javascript, arrays do not need to have their size assigned when declared or assigned items. You can also add multiple types of variables and objects in a single array.
+
+
+>Loops
+For loops are critical in programming. (BADASS!!!!)
+We use for loops to run repeated blocks of code over a set period.
+Each for loop is coomposed of a:
+    -Variable declaration or counter (iterator)
+    -Loop condition
+    -An iteration (addition)
+//Start with an Array.
+    var vegetables = ["Carrots", "Peas", "Lettuce", "Tomatoes"];
+
+//Loops through each index of the Array.
+    for (var i = 0; i < vegetables.length; i++) {
+        console.log("I love " + vegetables[i]); 
+    }
+//The above function will loop through vegetables array printing every item until it reaches the last index. 
+//Note: vegetables.length is a property and NOT a function which is why there are no parenthesis 
+
+
+>(group) projects (RPS Game)

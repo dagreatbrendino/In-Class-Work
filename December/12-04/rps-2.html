@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors Part 2
+  </title>
+</head>
+
+<body>
+
+  
+    <p id="winz">Wins: </p>
+    <p id="loz">Losses: </p>
+    <p id="tiz">Ties: </p>
+
+  
+
+  <script type="text/javascript">
+
+    // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+    var computerChoices = ["r", "p", "s"];
+    //initializing computerGuess for later
+    var computerGuess;
+    var wins = 0;
+    var losses = 0;
+    var ties = 0;
+    //assign the p elements from html to three seperate variables
+    var w = document.getElementById("winz");
+    var l = document.getElementById("loz");
+    var t = document.getElementById("tiz");
+
+    // This function is run whenever the user presses a key.
+    document.onkeyup = function(event) {
+
+      // Determines which key was pressed.
+      var userGuess = event.key;
+      //We only need to generate the computer's guess when the user inputs r,p, or s so no value is assigned to comptuerGuess until then
+      //if the userGuess is r, computerChoice is randomly assigned and then compared to r. wins, losses, or ties is then incremented appropriately 
+      if (userGuess == "r"){
+        // Randomly chooses a choice from the options array. This is the Computer's guess.
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        if(computerGuess == "s"){
+          wins++;
+        }
+        else if(computerGuess == "p"){
+          losses++;
+        }
+        else{
+          ties++;
+        }
+      }
+      //same as above, but for a userChoice of p
+      else if (userGuess == "p"){
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        if(computerGuess == "r"){
+          wins++;
+        }
+        else if(computerGuess == "s"){
+          losses++;
+        }
+        else{
+          ties++;
+        }
+      }
+      //same as above, but for a user guess of s
+      else if (userGuess == "s"){
+        computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+        if(computerGuess == "p"){
+          wins++;
+        }
+        else if(computerGuess == "r"){
+          losses++;
+        }
+        else{
+          ties++;
+        }
+      }
+      // Alerts the key the user pressed (userGuess) as long as it was a valid entry for the game.
+      if(userGuess=="r" || userGuess=="s" || userGuess=="p"){
+      alert("User guess: " + userGuess);
+      }
+      // Alerts the Computer's guess as long as the user guess was valid.
+      if(userGuess=="r" || userGuess=="s" || userGuess=="p"){
+      alert("Computer guess: " + computerGuess);
+      }
+      // updates the p elements in the html with the most recent values for wins, losses, and ties
+      w.textContent = ("wins: " + wins);
+      l.textContent = ("losses: " + losses);
+      t.textContent = ("ties: " + ties);
+
+    }
+  </script>
+
+</body>
+
+</html>
