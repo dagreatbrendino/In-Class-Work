@@ -1,0 +1,11 @@
+Objectives
+>Intro to Funcitons
+Functions are a great way to accomplish some sort of task you need to execute multiple times
+Functions basically take an input(argument), do some processing, and then usually have some sort of output(return)
+Functions need to be DEFINED and CALLED
+the results of functions can be passed to variables via return
+Uses sources in inspector in order to pause function with breakpoints. You can also hardcode in the keyword "debugger" to accomplish the same thing
+
+>Intro to Objects 
+
+>build simple JS applications
