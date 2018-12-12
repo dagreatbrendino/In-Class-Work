@@ -1,0 +1,4 @@
+jQuery is a library for js in the same way that bootstrap is a library for css.
+We must utilize the jQuery specific ($) selector 
+    $("#clickMe")
+The jQuery methods we want to use applyied to selected elements

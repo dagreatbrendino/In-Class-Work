@@ -1,0 +1,3 @@
+Objectives
+>use jQuery methods to manipulate DOM
+>gain initial understanding of lexical scope
