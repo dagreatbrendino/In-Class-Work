@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+
+    </div>
+  </div>
+  
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+  // Example queryURL for Giphy API
+  var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=cheeseburgers";
+  var gifs = [];
+  var getGifs = function(term) {
+      $.ajax({
+        url: "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=" + term,
+        method: "GET"
+      }).then(function (response) {
+        console.log(response);
+        for(var i = 0; i < response.data.length; i++){
+          gifs.push(response.data[i].id);
+        }
+
+        for(var j =0; j < gifs.length; j++){
+        $(".row").append("<div class = col-3><img class=img-fluid src=https://media.giphy.com/media/"+ gifs[j]+ "/giphy.gif />");
+        }
+      });
+    }
+  var searchTerm = prompt();
+  getGifs(searchTerm);
+</script>
+</html>

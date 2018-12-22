@@ -1,0 +1,26 @@
+What is an API?
+Code that allows two seperate programs to communicate with eachother
+An application that you can put into another application
+What does API stand for?
+Application Program interface
+What are some examples of APIs? (Find links to specific APIs)
+https://developers.google.com/safe-browsing/v4/
+https://www.themealdb.com/api.php
+https://developer.valvesoftware.com/wiki/Steam_Web_API
+https://api.usaspending.gov/
+https://www.cloudmersive.com/image-recognition-and-processing-api
+
+What do these specific APIs allow you as a developer to do?
+
+The safe browsing api can be used to reference a database of unsafe urls and warn users about them before they click them
+
+The mealdb api can be used to find recipies 
+
+The steam api can be used to get all sorts of information about users, games, etc.
+
+The USAspending API (Application Programming Interface) allows the public to access comprehensive U.S. government spending data.
+The data include spending on awards (e.g., who received federal contracts or grants, geographic breakdowns, agency breakdowns, and much more). The data also include 
+account-level, non-award spending such as federal employee compensation. You can learn more about the data and the federal law that requires it to be publicly accessible 
+(the DATA Act) at http://fedspendingtransparency.github.io.
+
+The cloudmersive image recognition api is a powerful tool that has capabilities ranging from, face recognition, automatic descriptive image captioning, nsfw detection, and more!
