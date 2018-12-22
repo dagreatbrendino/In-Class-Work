@@ -1,0 +1,5 @@
+Objectives
+>conceptualize problem solving "visually"
+>psuedo coding for live interviews 
+>continue assembling code "go-to's"
+>complete JS & jQ checkpoint (part deux)

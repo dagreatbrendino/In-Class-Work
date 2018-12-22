@@ -1,0 +1,5 @@
+Objectives 
+>Reinforce JS & jQ
+>Intro to Timing Events (setTimeOut, setInterval, clearInterval)
+>Talkin' loud & sayin' nothin' (you & code)
+>comfort with coplex logical conditions 

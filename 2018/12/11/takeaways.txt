@@ -1,3 +1,4 @@
 Objectives
 >use jQuery methods to manipulate DOM
+In order to manipulate an element with jQuery, the element needs to be captured via jQuery
 >gain initial understanding of lexical scope

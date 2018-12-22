@@ -1,0 +1,6 @@
+Objectives
+>Interview Qustion Sample
+
+>build a semi-complex calculator (jQuery) in teams
+
+>Complete Javascript checkpoint
