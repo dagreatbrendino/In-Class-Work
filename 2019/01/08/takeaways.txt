@@ -1,0 +1,4 @@
+Objectives
+>Clear the fog!
+>solidify understanding of AJAX, JSON within fullstack web development 
+>Increase comfort level of above in data rich applications 
