@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Quoth the Giphy</title>
+</head>
+
+<body>
+  <div id="buttons">
+    <button data-person="arnold schwarzenegger">
+      I'll be back
+    </button>
+    <button data-person="michael j fox">
+      My happiness grows in direct proportion to my acceptance,
+      and in inverse proportion to my expectations.
+    </button>
+
+    <!-- STEP ONE: Open this file in the browser and click on the buttons. Watch what happens -->
+
+    <!-- STEP TWO: between the dashed lines below
+            * add three more buttons
+            * add a data-person attribute of famous people you know
+            * with a quote said by them -->
+
+    <!-- **************************************** -->
+
+    <button data-person="samuel l jackson">
+        And You Will Know My Name Is The Lord When I Lay My Vengeance Upon Thee!
+    </button>
+    <button data-person="seth rogan">
+        Please take the chairs away. I don’t like them. The big one is staring at me and that short one is being very droll.
+    </button>
+    <button data-person="ian mckellen">
+        A wizard is never late, Frodo Baggins. Nor is he early. He arrives precisely when he means to.
+    </button>
+
+    <!-- **************************************** -->
+
+
+    <!-- STEP THREE: open this file in the browser and click on your buttons. If they don't work, then fix your buttons -->
+
+    <!-- STEP FOUR: go over the JavaScript with your partners, and explain the lines of code to each other. -->
+
+  </div>
+
+  <div id="gifs-appear-here">
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+    $("button").on("click", function() {
+      var person = $(this).attr("data-person");
+      var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
+        person + "&api_key=dc6zaTOxFJmzC&limit=10";
+
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      })
+        .then(function(response) {
+          var results = response.data;
+          console.log(response);
+          for (var i = 0; i < results.length; i++) {
+            //assign a jQuery div element to the variable gifDiv
+            var gifDiv = $("<div>");
+            //Assign response.data.rating to variable rating
+            var rating = results[i].rating;
+            //assign a jQuery <p> element with the text content "Rating: rating" where rating is the varible above to the variable p
+            var p = $("<p>").text("Rating: " + rating);
+            //assign a jQuery img element to the variable personImage
+            var personImage = $("<img>");
+            //add a new attribute to the personImage varible from the that will be the source for the img element. The url is grabbed using the keys data (array)>
+            // current index > images (object) > fixed_height (object) > url (key)
+            personImage.attr("src", results[i].images.fixed_height.url);
+            //the rating is prepended to the gifDiv
+            gifDiv.prepend(p);
+            //the person image is prepended to the gifDiv
+            gifDiv.prepend(personImage);
+            //the gif div is added to the dom
+            $("#gifs-appear-here").prepend(gifDiv);
+          }
+        });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+Objectives
+>build a mastery of dynamic content generation & AJAX
+>provide "real world" app dev scenario that requires collaborative coding
+>reinforce troubleshooting skillsw

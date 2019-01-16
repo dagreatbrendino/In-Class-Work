@@ -1,0 +1,10 @@
+Objectives
+>introduce concept of "date persistaence" in web applications
+>become familiar with cookies, sessionStorage, localStorage
+>buld an app using localStorage to maintain application "state" between webpage sessionStorage
+Useful methods
+Array methods{slice(),splice(),substring(),split()}
+JSON.stringify
+.parse()
+indexof
+typeof
