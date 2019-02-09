@@ -1,0 +1,4 @@
+Objectives
+>Modules/Export/Require in Node
+>Introduce native fs package for reading & writing files to Node
+>Introduce the external axios package for HTTP requests to external websites
