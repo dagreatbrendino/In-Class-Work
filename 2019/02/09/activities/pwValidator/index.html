@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var lower = upper.toLowerCase();
+
+    var validate = function(pw){
+        var upperChar = false;
+        var lowerChar = false;
+        if (pw.length < 8){
+            console.log("Paswword must be at least 8 chars")
+            return false;
+        }
+        for (var i = 0; i < pw.length; i++){
+            if (upper.includes(pw[i])){
+                upperChar = true;
+                break;
+            }        
+        }
+        for (var j = 0; j < pw.length; j++){
+            if (lower.includes(pw[j])){
+                lowerChar = true;
+                break;
+            }        
+        }
+        if (!upperChar){
+            console.log("Password must have atleast one uppercase letter!");
+            return false;
+        }
+        if (!lowerChar){
+            console.log("Password must have atleast one lowercase letter!");
+            return false;
+        }
+        console.log("Password is valid!");
+        return true;
+    }
+var  passwordValid = function (pw)
+{
+  if(pw == "") {
+    console.log("Password is empty");
+    return false;
+  }
+  re = /^\w+$/;
+  if(!re.test(pw)) {
+    console.log("Error: Username must contain only letters, numbers and underscores!");
+    return false;
+  }
+
+  if(pw.length < 8) {
+    console.log("Error: Password must contain at least eight characters!");
+    return false;
+  }
+
+  re = /[0-9]/;
+  if(!re.test(pw)) {
+    console.log("Error: password must contain at least one number (0-9)!");
+    return false;
+  }
+  re = /[a-z]/;
+  if(!re.test(pw)) {
+    console.log("Error: password must contain at least one lowercase letter (a-z)!");
+    return false;
+  }
+  re = /[A-Z]/;
+  if(!re.test(pw)) {
+    console.log("Error: password must contain at least one uppercase letter (A-Z)!");
+    return false;
+  }
+
+  console.log("You entered a valid password: " + pw);
+  return true;
+}
+var hasUpperCase = false;
+  var hasLowerCase = false;
+  var greaterThanEight = false;
+
+  function validatePassword(password) {
+      var passwordArray = password.split("");
+      console.log(passwordArray);
+      passwordArray.forEach(function (char) {
+          if (char === char.toUpperCase()) {
+              hasUpperCase = true;
+          }
+          if (char === char.toLowerCase()) {
+              hasLowerCase = true;
+          }
+          if (passwordArray.length >= 8) {
+              greaterThanEight = true;
+          }
+
+      })
+      if (hasLowerCase && hasUpperCase && greaterThanEight) {
+          console.log("requirements have been met")
+
+      } else {
+          console.log("Greater Than 8? ", greaterThanEight);
+          console.log("Has Upper Case? ", hasUpperCase);
+          console.log("Has Lower Case? ", hasLowerCase);
+      }
+  }
+</script>

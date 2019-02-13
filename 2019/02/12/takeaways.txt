@@ -1,0 +1,4 @@
+Objectives
+>"master" the basics of JavaScript Objects
+>Create basic JavaScript constructors for use in Node applications
+>Create a simple Node application which uses methods contained within a constructed object 

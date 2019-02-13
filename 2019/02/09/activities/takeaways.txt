@@ -1,0 +1,4 @@
+Objectives
+>working with NPM and workflow of working with npm install, init, etc.
+>work with packages: weather-js, node-gecoder, & inquirer
+>explore global testing package: inspect
