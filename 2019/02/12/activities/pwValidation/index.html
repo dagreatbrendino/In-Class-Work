@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    var lower = upper.toLowerCase();
+
+    var validate = function(pw){
+        var upperChar = false;
+        var lowerChar = false;
+        var special = false;
+        if (pw.length < 8){
+            console.log("Paswword must be at least 8 chars")
+            return false;
+        }
+        for (var i = 0; i < pw.length; i++){
+            if (upper.includes(pw[i])){
+                upperChar = true;
+                break;
+            }        
+        }
+        for (var j = 0; j < pw.length; j++){
+            if (lower.includes(pw[j])){
+                lowerChar = true;
+                break;
+            }        
+        }
+        for (var k = 0; k < pw.length; k++){
+            console.log(pw.charCodeAt(k));
+            if((pw.charCodeAt(k) > 32 && pw.charCodeAt(k) < 48) || (pw.charCodeAt(k) > 57 && pw.charCodeAt(k) < 65) || 
+            (pw.charCodeAt(k) > 90 && pw.charCodeAt(k) < 97)  || (pw.charCodeAt(k) > 122 && pw.charCodeAt(k) < 126)) {
+                special = true;
+                break;
+            }
+        }
+        if (!upperChar){
+            console.log("Password must have atleast one uppercase letter!");
+            return false;
+        }
+        if (!lowerChar){
+            console.log("Password must have atleast one lowercase letter!");
+            return false;
+        }
+        if(!special){
+            console.log("Password must have atleast one special character!")
+            return false;
+        }
+        console.log("Password is valid!");
+        return true;
+    }
+</script>

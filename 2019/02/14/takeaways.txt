@@ -1,0 +1,4 @@
+Objectives
+>feel comfortable understanding & using constructors
+>create simple applications that: take in user input & utilize constructors to create objects 
+>understand the basics of recursion as an alternative to loops
